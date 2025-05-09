@@ -74,7 +74,8 @@
             margin-top: 5px;
         }
         /* Ensure step <strong> tags render bold */
-        td strong { font-weight: bold; display: block; margin-bottom: 5px; }
+        td strong { font-weight: bold; } /* General strong for keywords */
+        td > strong { display: block; margin-bottom: 5px; } /* For step headers */
 
 
         span[style*="color: red;"] {
@@ -151,10 +152,12 @@
                     <tr>
                         <td>
                             <strong>Paso 1 (3 min): Objetivo - Revisión de Expertos</strong>
-                            <br>Reunir a los equipos con su proyecto abierto, dibujos y T-Bar.
-                            <br>Recordar que el prototipo está casi listo.
-                            <br>Explicar el objetivo: revisión final por TODO el equipo como expertos.
-                            <br><strong>Proyectar Diapositiva 1</strong> (Título de la Sesión + Iconos: Lupa sobre todo el proyecto 🔍, Dibujo/Plan original 📜, Lista de verificación final ✅).
+                            <ul>
+                                <li>Reunir a los equipos con su proyecto abierto, dibujos y T-Bar.</li>
+                                <li>Recordar que el prototipo está casi listo.</li>
+                                <li>Explicar el objetivo: revisión final por TODO el equipo como expertos.</li>
+                                <li><strong>Proyectar Diapositiva 1</strong>.</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Hola, Equipos de Élite! ¡Su aventura interactiva está casi, casi perfecta!"
@@ -165,8 +168,10 @@
                     <tr>
                         <td>
                             <strong>Paso 2 (2 min): Roles y Kanban</strong>
-                             <br>Explicar que hoy TODOS los roles participan activamente en la revisión desde su perspectiva (Diseñador-Visual, Constructor-Bloques, Probador-Funcionamiento).
-                             <br>Ubicar la tarjeta "Revisión Completa del Equipo" en el Kanban, lista para moverse a "¡Haciendo Ahora!".
+                            <ul>
+                                <li>Explicar que hoy TODOS los roles participan activamente en la revisión desde su perspectiva.</li>
+                                <li>Ubicar la tarjeta "Revisión Completa del Equipo" en el Kanban, lista para moverse a "¡Haciendo Ahora!".</li>
+                            </ul>
                         </td>
                         <td>
                             "En esta revisión, ¡todos los roles son cruciales! El Diseñador comparará con los dibujos, el Constructor pensará en los bloques, y el Probador jugará buscando fallos. ¡Todos aportan!"
@@ -190,8 +195,10 @@
                     <tr>
                         <td>
                             <strong>Paso 1 (5 min): Jugar la Aventura Varias Veces (Todo el Equipo)</strong>
-                            <br>Instruir a los equipos para que jueguen la aventura completa varias veces, observando atentamente.
-                            <br>Mover tarjeta "Revisión Completa del Equipo" a "¡Haciendo Ahora!".
+                            <ul>
+                                <li>Instruir a los equipos para que jueguen la aventura completa varias veces, observando atentamente.</li>
+                                <li>Mover tarjeta "Revisión Completa del Equipo" a "¡Haciendo Ahora!".</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Ok, equipo! Empiecen jugando la aventura completa. Pásense la tablet si es necesario. Jueguen el camino del Héroe, el del Villano, prueben la sorpresa extra. ¡Háganlo unas cuantas veces, observando todo!"
@@ -201,15 +208,18 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 2 (10 min): Comparación Meticulosa (Diseñador/a Lidera)</strong>
-                            <br>El **Diseñador/a** lidera la comparación:
+                            <strong>Paso 2 (10 min): Comparación Meticulosa (<strong>Diseñador/a</strong> Lidera)</strong>
                             <ul>
-                                <li>Mostrar cada escena en Scratch Jr. y compararla lado a lado con los dibujos originales.</li>
-                                <li>Verificar colores, posiciones, tamaños, detalles visuales.</li>
-                                <li>Comparar el flujo del juego con el diagrama T-Bar original.</li>
+                                <li>El <strong>Diseñador/a</strong> lidera la comparación:
+                                    <ul>
+                                        <li>Mostrar cada escena en Scratch Jr. y compararla lado a lado con los dibujos originales.</li>
+                                        <li>Verificar colores, posiciones, tamaños, detalles visuales.</li>
+                                        <li>Comparar el flujo del juego con el diagrama T-Bar original.</li>
+                                    </ul>
+                                </li>
+                                <li>¿Cumple la visión original? ¿Hay algo diferente? Anotar cualquier desviación.</li>
+                                <li><strong>Proyectar Diapositiva 2</strong>.</li>
                             </ul>
-                             <br>¿Cumple la visión original? ¿Hay algo diferente? Anotar cualquier desviación.
-                             <br><strong>Proyectar Diapositiva 2</strong> (Visual que muestre la comparación: pantalla de Scratch Jr. a un lado, dibujo/T-Bar al otro, con una lupa o flechas señalando puntos de comparación).
                         </td>
                         <td>
                             "¡Diseñadores, su momento cumbre! Tomen los dibujos originales y el T-Bar."
@@ -223,14 +233,17 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong>Paso 3 (5 min): Revisión de Bloques (Constructor/a)</strong>
-                            <br>El **Constructor/a** revisa los scripts de los personajes principales y la interacción extra:
+                            <strong>Paso 3 (5 min): Revisión de Bloques (<strong>Constructor/a</strong>)</strong>
                             <ul>
-                                <li>¿Hay bloques que ya no se usan (huérfanos)?</li>
-                                <li>¿Hay algo que parezca innecesariamente complicado?</li>
-                                <li>¿Se detecta algún posible fallo lógico revisando los bloques?</li>
+                                <li>El <strong>Constructor/a</strong> revisa los scripts de los personajes principales y la interacción extra:
+                                    <ul>
+                                        <li>¿Hay bloques que ya no se usan (huérfanos)?</li>
+                                        <li>¿Hay algo que parezca innecesariamente complicado?</li>
+                                        <li>¿Se detecta algún posible fallo lógico revisando los bloques?</li>
+                                    </ul>
+                                </li>
+                                <li>Anotar cualquier bloque sospechoso o innecesario.</li>
                             </ul>
-                             <br>Anotar cualquier bloque sospechoso o innecesario.
                         </td>
                         <td>
                             "Constructores, ¡un vistazo bajo el capó! Revisen los bloques de sus personajes y de la sorpresa extra."
@@ -244,14 +257,17 @@
                     </tr>
                      <tr>
                         <td>
-                            <strong>Paso 4 (5 min): Pruebas Extremas (Probador/a)</strong>
-                            <br>El **Probador/a** realiza pruebas "extremas" para intentar "romper" el juego:
+                            <strong>Paso 4 (5 min): Pruebas Extremas (<strong>Probador/a</strong>)</strong>
                             <ul>
-                                <li>Clics muy, muy rápidos repetidamente sobre los personajes.</li>
-                                <li>Tocar varios sitios de la pantalla a la vez o muy seguido.</li>
-                                <li>Intentar activar la interacción extra mientras se cambia de escena.</li>
+                                <li>El <strong>Probador/a</strong> realiza pruebas "extremas" para intentar "romper" el juego:
+                                    <ul>
+                                        <li>Clics muy, muy rápidos repetidamente sobre los personajes.</li>
+                                        <li>Tocar varios sitios de la pantalla a la vez o muy seguido.</li>
+                                        <li>Intentar activar la interacción extra mientras se cambia de escena.</li>
+                                    </ul>
+                                </li>
+                                <li>¿Se bloquea? ¿Hace algo inesperado? Anotar cualquier comportamiento extraño.</li>
                             </ul>
-                             <br>¿Se bloquea? ¿Hace algo inesperado? Anotar cualquier comportamiento extraño.
                         </td>
                         <td>
                             "¡Probadores, su desafío final! ¡Intenten 'romper' la aventura! (Pero con cuidado)."
@@ -268,9 +284,11 @@
                     <tr>
                         <td>
                             <strong>Paso 5 (5 min): Recopilar Hallazgos</strong>
-                            <br>Todo el equipo reúne las notas tomadas por cada rol.
-                            <br>Crear UNA lista consolidada de los mínimos detalles a corregir (máximo 3-5 puntos clave). Ser muy específicos.
-                            <br><strong>Proyectar Diapositiva 3</strong> (Visual de una lista corta y clara con checks o números, representando la lista de pendientes).
+                            <ul>
+                                <li>Todo el equipo reúne las notas tomadas por cada rol.</li>
+                                <li>Crear UNA lista consolidada de los mínimos detalles a corregir. Ser muy específicos.</li>
+                                <li><strong>Proyectar Diapositiva 3</strong>.</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Equipo, junten todas sus notas de expertos!"
@@ -300,9 +318,11 @@
                     <tr>
                         <td>
                             <strong>Paso 1 (2 min): Confirmar Lista y Kanban</strong>
-                            <br>Revisar la lista final de pendientes con cada equipo.
-                            <br>Confirmar que son ajustes menores y factibles para la última sesión de corrección.
-                            <br>Mover tarjeta "Revisión Completa del Equipo" a "✅ ¡Terminado!".
+                            <ul>
+                                <li>Revisar la lista final de pendientes con cada equipo.</li>
+                                <li>Confirmar que son ajustes menores y factibles para la última sesión de corrección.</li>
+                                <li>Mover tarjeta "Revisión Completa del Equipo" a "✅ ¡Terminado!".</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Muy bien! ¿Tenemos nuestra lista final de ajustes?"
@@ -315,9 +335,11 @@
                     <tr>
                         <td>
                             <strong>Paso 2 (2 min): Guardar Proyecto (¡Fundamental!)</strong>
-                            <br>Guiar EXPLICITAMENTE a los Constructores para guardar el proyecto (aunque no se hayan hecho cambios grandes, es buena práctica).
-                            <br>Asegurarse de que todos guarden.
-                            <br><strong>Proyectar Diapositiva 4</strong> (Icono grande de Guardar + Mensaje "¡Guarda Antes del Ajuste Final!").
+                            <ul>
+                                <li>Guiar EXPLICITAMENTE a los Constructores para guardar el proyecto.</li>
+                                <li>Asegurarse de que todos guarden.</li>
+                                <li><strong>Proyectar Diapositiva 4</strong>.</li>
+                            </ul>
                         </td>
                         <td>
                             "Y como siempre, ¡guardamos nuestro trabajo! Aunque hoy fue más de revisar, guardemos por si acaso."
@@ -330,8 +352,10 @@
                      <tr>
                         <td>
                             <strong>Paso 3 (1 min): Próximos Pasos (Ajustes Finales)</strong>
-                            <br>Anunciar Sesión 11: Corregir los últimos detalles de la lista.
-                            <br>Felicitar por la revisión exhaustiva.
+                            <ul>
+                                <li>Anunciar Sesión 11: Corregir los últimos detalles de la lista.</li>
+                                <li>Felicitar por la revisión exhaustiva.</li>
+                            </ul>
                         </td>
                         <td>
                             "¡Casi perfecto! Tenemos nuestra pequeña lista de ajustes finales."
